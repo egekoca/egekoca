@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elec-Chain</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        #candidates {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #candidates button {
+            margin: 0 15px; /* Butonlar arasında 15px boşluk */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elec-Chain</h1>
+    <h2>Sınıf Temsilcisi Seçimi</h2>
+    <button onclick="connectWallet()">Cüzdan Bağla</button>
+    <div id="candidates"></div>
+    <h2>Oy Sonuçları:</h2>
+    <div id="results"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
